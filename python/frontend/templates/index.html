@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singn Up Page </title>
+</head>
+<body>
+    <p>Hi Welcome to Singn Up Page</p>
+    <p>Today is a {{ day_of_week }}</p>
+    <p>The time is {{ current_time }}</p>
+    <div class="centred">
+        <form action="/submit" method="POST">
+            <!-- <label for="fname">First Name:</label><br> -->
+            <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+            <input type="email" id="email" placeholder="Enter Email" required><br><br>
+            <!-- <input type="submit" value="Submit"> -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<style>
+body{
+    background-color: whitesmoke;
+}
+p{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
+</style>
+</html>
